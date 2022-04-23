@@ -44,7 +44,7 @@ const product = () => {
         </div>
         <div className="flex flex-col bg-white rounded-xl shadow-xl p-10 h-256">
           <p>Cart Items:</p>
-          {cartItems.length < 0 ? (
+          {cartItems.length === 0 ? (
             <p>No Items found</p>
           ) : (
             cartItems.map((cartItem, index) => {
